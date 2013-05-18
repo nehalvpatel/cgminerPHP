@@ -1,5 +1,11 @@
 <?php
 
+	/*
+	Made by Patel (itsPATEL.com)
+	Last Updated: 5/17/2013
+	Github: https://github.com/nehalvpatel/cgminerPHP
+	*/
+
 	class cgminerPHP {
 		var $_addr;
 		var $_port;
