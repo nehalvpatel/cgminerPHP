@@ -2,10 +2,10 @@
 
 	/*
 	Made by Patel (itsPATEL.com)
-	Last Updated: 5/17/2013
+	Last Updated: 6/6/2013
 	Github: https://github.com/nehalvpatel/cgminerPHP
 	*/
-
+	
 	class cgminerPHP {
 		var $_addr;
 		var $_port;
@@ -13,6 +13,12 @@
 		function __construct($addr, $port) {
 			$this->_addr = $addr;
 			$this->_port = $port;
+			
+			$this->testsock();
+		}
+		
+		function testsock() {
+			if (!@$this->request("version")) { die(); }
 		}
 		
 		function getsock($addr, $port) {
